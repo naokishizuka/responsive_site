@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Abel";
+html {
+  font-size: 62.5%;
+  /* ベースとなるフォントサイズの定義 */ }
+
+body {
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  /* フォントの種類 */
+  font-size: 1.4rem;
+  /* フォントサイズ */
+  line-height: 1.6;
+  /* 行間 */
+  letter-spacing: .1em;
+  /* 文字間隔 */ }
+
+header {
+  width: 100%; }
+  header .top {
+    background-image: url("../images/top.jpeg");
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 250px; }
+
+.block-center, main h1, footer .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center, main h1, main article section, footer {
+  text-align: center; }
+
+main h1 {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 36px; }
+main article {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between; }
+  main article section {
+    margin: 10px;
+    background-color: #a9a9a9;
+    flex-grow: 1; }
+    main article section h2 {
+      font-size: 2.0rem;
+      padding: 20px;
+      background-color: gray; }
+    main article section div {
+      color: white;
+      padding: 20px; }
+
+footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #a9a9a9; }
+  footer .btn {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: gray; }
+
+@media (min-width: 769px) {
+  header .top {
+    height: 500px; }
+
+  main article {
+    -webkit-flex-direction: row;
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */
